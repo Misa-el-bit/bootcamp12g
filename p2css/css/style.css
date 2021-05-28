@@ -1,30 +1,9 @@
-.header{
-    background-color: aqua;
-    display: inline-flex;
+*{
+    padding: 70px;
+    background-color: hsl(233,47%,7%)
 }
-
-.header-nav{
-    background-color: blueviolet;
-    display: inline-flex;
-}
-
-.main-section{
-    background-color: cyan;
-    display: inline-flex;
-    padding: auto;
-}
-
-.main-section-article{
-    background-color: darksalmon;
-    display: inline-flex;
-}
-
-.main-aside{
-    background-color: hotpink;
-    display: inline-flex;
-}
-
-.footer{
-    background-color: mediumaquamarine;
-    display: inline-flex;
+main{
+    padding: 100px;
+    background-color: hsl(244, 38%, 16%);
+    color: white;
 }
