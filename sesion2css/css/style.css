@@ -1,0 +1,26 @@
+header{
+    background-color: mediumturquoise;
+}
+
+nav{
+    background-color:magenta ;
+}
+
+section{
+    background-color: blue;
+    color: white;
+    float: left;
+}
+article{
+    background-color: plum;
+    color: black;
+}
+aside{
+    background-color:salmon ;
+    color: white;
+    padding: 15px;
+    float: right;
+}
+footer{
+    background-color: lightgray;
+}

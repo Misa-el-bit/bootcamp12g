@@ -1,0 +1,30 @@
+.header{
+    background-color: aqua;
+    display: inline-flex;
+}
+
+.header-nav{
+    background-color: blueviolet;
+    display: inline-flex;
+}
+
+.main-section{
+    background-color: cyan;
+    display: inline-flex;
+    padding: auto;
+}
+
+.main-section-article{
+    background-color: darksalmon;
+    display: inline-flex;
+}
+
+.main-aside{
+    background-color: hotpink;
+    display: inline-flex;
+}
+
+.footer{
+    background-color: mediumaquamarine;
+    display: inline-flex;
+}
