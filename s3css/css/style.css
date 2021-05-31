@@ -1,0 +1,49 @@
+.contenedor{
+    width: 50vw;
+    height: 50vh;
+    border: 2px solid green;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25vh;
+    position: relative;
+}
+
+.circulo{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 2px solid blue;
+    position: absolute;
+}
+
+.top-center{
+    top: 20px;
+    left: calc(50% - 25px);
+}
+
+.margin-right{
+    right: 20px;
+    top: calc(50% - 25px);
+}
+
+.btm-center{
+    bottom: 20px;
+    left: calc(50% - 25px);
+}
+
+.margin-left{
+    left: 20px;
+    top: calc(50% - 25px);
+}
+
+.cuadrado{
+    width: 25px;
+    height: 25px;
+    border: 2px solid red;
+    position: absolute;
+}
+
+.center{
+    top: calc(50% - 12.5px);
+    left: calc(50% - 12.5px);
+}
