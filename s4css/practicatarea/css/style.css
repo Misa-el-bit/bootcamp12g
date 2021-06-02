@@ -13,3 +13,7 @@
         transform: rotate(360deg);
     }
 }
+
+input#seleccion:checked + .forma{
+    animation: rotacion 5s infinite linear;
+}
