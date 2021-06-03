@@ -1,19 +1,39 @@
 .contenedor{
     border: 1px solid black;
     color: hsla(0, 0%, 100%, 0.75);
+    height: 80vh;
+    margin-top: 10vh;
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    img{
+        width: 80px;
+    }
 }
 
 .estilo1{
     background-color: hsl(31, 77%, 52%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5px;
+    .p{
+        color: hsla(0, 0%, 100%, 0.75);
+    }
 }
 
 .estilo2{
     background-color: hsl(184, 100%, 22%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .estilo3{
     background-color: hsl(179, 100%, 13%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .botones{
@@ -33,8 +53,10 @@
     }
 }
 
-@media only screen and (min-width:950px){
+@media only screen and (min-width:1050px){
     .contenedor{
         display: flex;
+        flex-direction: row;
     }
 }
+
