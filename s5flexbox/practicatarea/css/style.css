@@ -1,0 +1,35 @@
+.border{
+    border: 1px solid black;  
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    padding: 1rem;
+    border-right: .5px solid black;
+}
+
+main{
+    display: flex;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 10px;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+}
+
+#imgsize{
+    width: 50px;
+}
