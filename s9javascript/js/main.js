@@ -46,7 +46,6 @@ console.log( "Nombre completo:" + name + " " + lasName ) //concatenacion
 <= Menor o igual que 
 */
 
-
 /*1- pedir 2 numeros al usuario y mostrar en consola
 el resultado de aplicar todas las operaciones aritmeticas
 */
