@@ -30,20 +30,8 @@ section{
     overflow: hidden;
 }
 
-.w-50{
-    width: 50%;
-}
-
-.float-left{
-    float: left;
-}
-
 img{
     filter: sepia(1) hue-rotate(235deg) saturate(200%) contrast(100%);
-}
-
-.p-5{
-    padding: 3rem;
 }
 
 .component{
@@ -52,10 +40,26 @@ img{
     display: inline-block;
 }
 
-.m-top{
-    margin-top: 3rem;
+.float-left{
+    float: left;
+}
+.w-50{
+    width: 50%;
+}
+
+.p-5{
+    padding: 3rem;
 }
 
 .m-btm{
     margin-bottom: 3rem;
 }
+
+.m-top{
+    margin-top: 3rem;
+}
+
+
+
+
+
