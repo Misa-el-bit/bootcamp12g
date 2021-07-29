@@ -1,0 +1,37 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.green-wrapper{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 200px;
+    top: 500px;
+    border: 1px solid green;
+}
+.orange-wrapper{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 200px;
+    bottom: 350px;
+    border: 1px solid orange;
+}
+.red-wrapper{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 50%;
+    bottom: 50%;
+    border: 1px solid red;
+}
+.blue-wrapper{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    right: 200px;
+    bottom: 100px;
+    border: 1px solid blue;
+}
