@@ -1,0 +1,31 @@
+form{
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: slategrey;
+    padding: 1rem;
+}
+
+form input:checked{
+    transform: scale(1.5);
+}
+/* Se crea la pseudoclase cheked y se agrega + para indicar que los 
+p adyacentes a los inputs que se encuentren con la opcion checked */
+form .form-group input:checked + p{
+    opacity: 1;
+    /*La propiedad transition hace que los elementos seleccionados 
+    tengan una trancision en los cambios computables (en este caso 
+    se indica All para todos) con un tiempo de 1 segundo que se indica 
+    con 1s.*/
+    transition: all 1s ease;
+}
+
+/*La pseudo clase not es de negacion */
+form .form-group input:not(checked) + p{
+    transition: all 1s ease;
+}
+
+form .form-group p{
+    opacity: 0;
+    color: aliceblue;
+}
