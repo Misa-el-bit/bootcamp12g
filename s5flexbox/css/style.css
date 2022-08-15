@@ -24,6 +24,11 @@
     background-color: slategray;
 }
 
+.stretch{
+    width: 50px;
+    color: white;
+}
+
 .justify-content-flex-start{
     justify-content: flex-start;
 }
@@ -46,4 +51,20 @@
 
 .justify-content-space-evenly{
     justify-content: space-evenly;
+}
+
+.align-items-flex-start{
+    align-items: flex-start;
+}
+
+.align-items-flex-end{
+    align-items: flex-end;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.align-items-stretch{
+    align-items: stretch;
 }
