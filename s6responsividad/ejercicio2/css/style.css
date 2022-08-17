@@ -4,16 +4,16 @@
     padding: 0;
 }
 .container{
+    display:flex;
     width:100vw;
     height:100vh;
-    display:flex;
-    flex-direction: row;
-    justify-content:space-around;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
 }
 .item{
-    width:50px;
-    height:50px;
+    width:100px;
+    height:100px;
 
 }
 .rojo{
@@ -35,20 +35,19 @@
     }
     .item{
         margin:5% 10%;
-        width:10%;
+        width:15%;
         height:15%;
     }
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 1000px) {
     .container{
-        flex-direction: column;
+        flex-direction: row;
         justify-content:space-between;
-        align-items: center;
+        align-items: stretch;
     }
 
-    .item{
-        width:20%;
-        height:20%;
+    .container .item{
+        height:unset;
     }
   }

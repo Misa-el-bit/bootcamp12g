@@ -1,93 +1,107 @@
-.contenedor {
-  border: 1px solid black;
-  color: rgba(255, 255, 255, 0.75);
-  height: 80vh;
-  margin-top: 10vh;
+.container {
+  margin: 25px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-radius: 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 350px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 30px;
+  color: rgba(255, 255, 255, 0.75);
+  height: 425px;
 }
 
-.contenedor img {
+.container div img {
   width: 80px;
 }
 
-.estilo1 {
-  background-color: #e38826;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding: 5px;
+.container div h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: #f2f2f2;
 }
 
-.estilo1 .p {
-  color: rgba(255, 255, 255, 0.75);
+.container div p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  line-height: 1.5rem;
 }
 
-.estilo2 {
-  background-color: #006970;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.estilo3 {
-  background-color: #004241;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.botones {
-  background: #f2f2f2;
-  border-radius: 15px;
-  height: 30px;
-  width: 110px;
+.container div button {
+  width: 120px;
+  height: 40px;
+  border-radius: 21px;
+  background-color: #f2f2f2;
+  font-family: "Lexend Deca", sans-serif;
   border: none;
 }
 
-.botones #sedan {
+.container div.sedans {
+  background-color: #e38826;
+}
+
+.container div.sedans button {
   color: #e38826;
 }
 
-.botones #suvs {
+.container div.sedans button:hover {
+  border: 1px solid #f2f2f2;
+  background-color: #e38826;
+  color: #f2f2f2;
+}
+
+.container div.suvs {
+  background-color: #006970;
+}
+
+.container div.suvs button {
+  font-family: "Lexend Deca", sans-serif;
   color: #006970;
 }
 
-.botones #luxury {
+.container div.suvs button:hover {
+  border: 1px solid #f2f2f2;
+  background-color: #006970;
+  color: #f2f2f2;
+}
+
+.container div.luxury {
+  background-color: #004241;
+}
+
+.container div.luxury button {
+  font-family: "Lexend Deca", sans-serif;
   color: #004241;
 }
 
+.container div.luxury button:hover {
+  border: 1px solid #f2f2f2;
+  background-color: #004241;
+  color: #f2f2f2;
+}
+
 @media only screen and (min-width: 1050px) {
-  .contenedor {
+  .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -95,6 +109,15 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 45vw;
+    width: 1200px;
+  }
+  div {
+    height: 800px;
+    width: 250px;
   }
 }
 /*# sourceMappingURL=style.css.map */

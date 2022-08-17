@@ -2,6 +2,7 @@
     width: 100px;
     height: 100px;
     background-color: black;
+    transition: all .5s ease;
 }
 
 @media only screen and (min-width:768px){
@@ -13,10 +14,11 @@
 
 }
 
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 1200px){
     .element{
         border-radius: 0;
         background-color: cornflowerblue;
+        width: 200px;
     }
 
 }
