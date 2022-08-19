@@ -45,6 +45,7 @@ $F-family2:'Big Shoulders Display', cursive;
         }
         &.sedans{
             background-color: $Bright-orange;
+            border-radius: 10px 10px 0 0;
             button{
                 color: $Bright-orange;
             }
@@ -68,6 +69,7 @@ $F-family2:'Big Shoulders Display', cursive;
         }
         &.luxury{
             background-color: $Very-dark-cyan;
+            border-radius: 0 0 10px 10px;
             button{
                 font-family: $F-family;
                 color: $Very-dark-cyan;
@@ -86,10 +88,18 @@ $F-family2:'Big Shoulders Display', cursive;
         flex-direction: row;
         align-items: center;
         height: 45vw;
-        width: 1200px;
+        width: 1000px;
+        div{
+            height: 450px;
+            width: 370px;
+            &.sedans{
+                border-radius: 10px 0 0 10px;
+                
+            }
+            &.luxury{
+                border-radius: 0 10px 10px 0;
+            }
+        }
     }
-    div{
-        height: 800px;
-        width: 250px;
-    }
+    
 }

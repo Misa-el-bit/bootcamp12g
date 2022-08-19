@@ -58,6 +58,7 @@
 
 .container div.sedans {
   background-color: #e38826;
+  border-radius: 10px 10px 0 0;
 }
 
 .container div.sedans button {
@@ -87,6 +88,7 @@
 
 .container div.luxury {
   background-color: #004241;
+  border-radius: 0 0 10px 10px;
 }
 
 .container div.luxury button {
@@ -113,11 +115,17 @@
         -ms-flex-align: center;
             align-items: center;
     height: 45vw;
-    width: 1200px;
+    width: 1000px;
   }
-  div {
-    height: 800px;
-    width: 250px;
+  .container div {
+    height: 450px;
+    width: 370px;
+  }
+  .container div.sedans {
+    border-radius: 10px 0 0 10px;
+  }
+  .container div.luxury {
+    border-radius: 0 10px 10px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
