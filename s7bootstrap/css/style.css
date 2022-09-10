@@ -1,0 +1,7 @@
+.tall {
+  height: 15rem;
+  display: flex;
+}
+.tall h3 {
+  flex-basis: 100%;
+}/*# sourceMappingURL=style.css.map */

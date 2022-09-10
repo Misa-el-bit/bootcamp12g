@@ -1,0 +1,7 @@
+.tall{
+    height: 15rem;
+    display: flex;
+    h3{
+        flex-basis: 100%; // es como un min-width pero en un elemento flexible, es lo mismo que un width 100% 
+    }
+}
