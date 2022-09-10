@@ -1,0 +1,105 @@
+//colors
+$violet: hsl(263, 55%, 52%);
+$dark-grayish: hsl(217, 19%, 35%);
+$dark-blackish-blue: hsl(219, 29%, 14%);
+$white: hsl(0, 0%, 100%);
+$light-gray: hsl(0, 0%, 81%);
+$grayish-blue: hsl(210, 46%, 95%);
+$custom: hsl(263, 82%, 70%);
+
+//reset
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    margin: 1rem auto;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    background-color: $grayish-blue;
+}
+
+.bg-{
+    &violet{
+        background-color: $violet;
+    }
+    &dark-grayish{
+        background-color: $dark-grayish;
+    }
+    &dark-blackish-blue{
+        background-color: $dark-blackish-blue;
+    }
+    &white{
+        background-color: $white;
+    }
+}
+.quote-bg{
+    background-image: url(../img/bg-pattern-quotation.svg);
+    background-position-x: calc(100% - 2rem);
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: 110px;
+}
+.card{
+    margin: 1rem 0;
+    border-radius: 6px;
+    .card-body{
+        .subtitle-white{
+            color: $white;
+        }
+        .subtitle-gray{
+            color: $dark-grayish;
+        }
+        .card-text{
+            color: $light-gray;
+            opacity: 50%;
+            &.gray{
+                color: $dark-grayish;
+                opacity: 50%;
+            }
+        }
+        .card-title{
+            display: flex;
+            align-items: center;
+            img{
+                border: 2px solid $light-gray;
+                border-radius: 100%;
+                width: 3rem;
+                margin-right: 1rem;
+                margin-bottom: .5rem;
+                &.br-violet{
+                    border: 2px solid $violet
+                }
+                &.br-light-violet{
+                    border: 2px solid $custom;
+                }
+            }
+            .user-data{
+                line-height: 5px;
+                .name-white{
+                    color: $white;
+                }
+                .name-gray{
+                    color: $dark-grayish;
+                }
+                p{
+                    color: $light-gray;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1200px){
+    .quote-bg{
+        background-position-x: calc(100% - 5rem);
+    }
+}
+
+
+
+
+
