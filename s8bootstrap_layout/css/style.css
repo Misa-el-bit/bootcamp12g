@@ -69,6 +69,7 @@ body {
     background-image: url("../img/bg-pattern-top-desktop.svg"), url("../img/bg-pattern-bottom-desktop.svg");
     background-repeat: no-repeat, no-repeat;
     background-position: top left, bottom right;
+    height: 100vh;
   }
   .header h1 {
     width: 400px;
@@ -98,12 +99,6 @@ body {
   }
   .cards-container {
     height: 20rem;
-  }
-  .cards-container .column-card-left {
-    margin-bottom: 3rem;
-  }
-  .cards-container .column-card-right {
-    margin-top: 3rem;
   }
   .cards-container .card {
     height: 13rem;
