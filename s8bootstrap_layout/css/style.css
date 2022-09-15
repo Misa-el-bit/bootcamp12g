@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+  background-color: hsl(0deg, 0%, 100%);
+  background-image: url("../img/bg-pattern-top-mobile.svg"), url("../img/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+}
+
+.header {
+  margin-top: 4rem;
+}
+.header h1 {
+  color: hsl(300deg, 43%, 22%);
+  font-weight: 700;
+  line-height: 35px;
+  margin-top: 2rem;
+}
+.header p {
+  color: hsl(303deg, 10%, 53%);
+  font-weight: 500;
+  width: 290px;
+  margin: 1rem 1rem 1rem 1.7rem;
+}
+
+.bars-container {
+  margin-top: 1rem;
+}
+.bars-container .ranking {
+  background-color: hsl(300deg, 24%, 96%);
+  width: 20rem;
+  border-radius: 7px;
+}
+.bars-container .ranking p {
+  color: hsl(300deg, 43%, 22%);
+  font-weight: 700;
+}
+
+.card {
+  background-color: hsl(300deg, 43%, 22%);
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 7px;
+}
+.card .card-body .user {
+  padding: 1rem;
+}
+.card .card-body .user img {
+  width: 2rem;
+  border-radius: 100%;
+}
+.card .card-body .user .user-name .card-title {
+  line-height: 35px;
+}
+.card .card-body .user .user-name .card-subtitle {
+  color: hsl(333deg, 80%, 67%);
+}
+.card .card-body .card-text {
+  padding: 0 1rem 1rem 1rem;
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    background-image: url("../img/bg-pattern-top-desktop.svg"), url("../img/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+  }
+  .header h1 {
+    width: 400px;
+    font-size: 62px;
+    line-height: 50px;
+    margin-top: 1rem;
+  }
+  .header p {
+    margin: 2rem 0 0 0;
+    width: 380px;
+  }
+  .bars-container {
+    height: 18rem;
+    margin-top: 2rem;
+  }
+  .bars-container .ranking {
+    width: 25rem;
+  }
+  .bars-container .ranking p {
+    padding-top: 0.3rem;
+  }
+  .bars-container .ranking.first {
+    margin-right: 5rem;
+  }
+  .bars-container .ranking.third {
+    margin-left: 5rem;
+  }
+  .cards-container {
+    height: 20rem;
+  }
+  .cards-container .column-card-left {
+    margin-bottom: 3rem;
+  }
+  .cards-container .column-card-right {
+    margin-top: 3rem;
+  }
+  .cards-container .card {
+    height: 13rem;
+  }
+  .cards-container .card .card-body .user {
+    padding: 0.5rem 1rem 1rem 1rem;
+  }
+  .cards-container .card .card-body .card-text {
+    padding: 0 1rem 1rem 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */

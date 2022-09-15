@@ -1,0 +1,128 @@
+//colors
+$Very-dark-magenta: hsl(300, 43%, 22%);
+$Soft-pink: hsl(333, 80%, 67%);
+$Dark-grayish-magenta: hsl(303, 10%, 53%);
+$Light-grayish-magenta: hsl(300, 24%, 96%);
+$White: hsl(0, 0%, 100%);
+//reset
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    background-color: $White;
+    background-image: url("../img/bg-pattern-top-mobile.svg"), url("../img/bg-pattern-bottom-mobile.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+}
+.header{
+    margin-top: 4rem;
+    h1{
+        color: $Very-dark-magenta;
+        font-weight: 700;
+        line-height: 35px;
+        margin-top: 2rem;
+    }
+    p{
+        color: $Dark-grayish-magenta;
+        font-weight: 500;
+        width: 290px;
+        margin: 1rem 1rem 1rem 1.7rem;
+    }
+}
+.bars-container{
+    margin-top: 1rem;
+    .ranking{
+        background-color: $Light-grayish-magenta;
+        width: 20rem;
+        border-radius: 7px;
+        p{
+            color: $Very-dark-magenta;
+            font-weight: 700;
+        }
+    }
+}
+.card{
+    background-color: $Very-dark-magenta;
+    color: $White;
+    border-radius: 7px;
+    .card-body{
+        .user{
+            padding: 1rem;
+            img{
+                width: 2rem;
+                border-radius: 100%;
+            }
+            .user-name{
+                .card-title{
+                    line-height: 35px;
+                }
+                .card-subtitle{
+                    color: $Soft-pink;
+                }
+            }
+        }
+        .card-text{
+            padding: 0 1rem 1rem 1rem;
+        }
+    }
+}
+
+//responsive
+@media only screen and (min-width:1200px){
+    body{
+        background-image: url("../img/bg-pattern-top-desktop.svg"), url("../img/bg-pattern-bottom-desktop.svg");
+        background-repeat: no-repeat, no-repeat;
+        background-position: top left, bottom right;
+    }
+    .header{
+        h1{
+            width: 400px;
+            font-size: 62px;
+            line-height: 50px;
+            margin-top: 1rem;
+        }
+        p{
+            margin: 2rem 0 0 0;
+            width: 380px;
+        }
+    }
+    .bars-container{
+        height: 18rem;
+        margin-top: 2rem;
+        .ranking{
+            width: 25rem;
+            p{
+                padding-top: .3rem;
+            }&.first{
+                margin-right: 5rem;
+            }&.third{
+                margin-left: 5rem;
+            }
+        }
+    }
+    .cards-container{
+        height: 20rem;
+        .column-card-left{
+            margin-bottom: 3rem;
+        }
+        .column-card-right{
+            margin-top: 3rem;
+        }
+        .card{
+            height: 13rem;
+            .card-body{
+                .user{
+                    padding: 0.5rem 1rem 1rem 1rem;
+                }
+                .card-text{
+                    padding: 0 1rem 1rem 1rem;
+                }
+            }
+        }
+    }
+}
