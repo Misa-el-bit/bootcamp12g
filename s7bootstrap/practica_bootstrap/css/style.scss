@@ -16,7 +16,7 @@ $custom: hsl(263, 82%, 70%);
 body{
     display: flex;
     align-items: center;
-    margin: 1rem auto;
+    margin: 1rem 0;
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 13px;
     background-color: $grayish-blue;
@@ -94,6 +94,10 @@ body{
 }
 
 @media only screen and (min-width:1200px){
+    body{
+        height: 100vh;
+        margin: 0;
+    }
     .quote-bg{
         background-position-x: calc(100% - 5rem);
     }

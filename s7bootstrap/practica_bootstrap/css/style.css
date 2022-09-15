@@ -7,7 +7,7 @@
 body {
   display: flex;
   align-items: center;
-  margin: 1rem auto;
+  margin: 1rem 0;
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 13px;
   background-color: hsl(210deg, 46%, 95%);
@@ -83,6 +83,10 @@ body {
 }
 
 @media only screen and (min-width: 1200px) {
+  body {
+    height: 100vh;
+    margin: 0;
+  }
   .quote-bg {
     background-position-x: calc(100% - 5rem);
   }
