@@ -49,7 +49,7 @@ console.log( "Nombre completo:" + name + " " + lasName ) //concatenacion
 /*1- pedir 2 numeros al usuario y mostrar en consola
 el resultado de aplicar todas las operaciones aritmeticas
 */
-/*parseInt(secondNomber)*/
+//parseInt() convierte un string a un numero 
 var firstNumber = parseInt(prompt("Ingresa un numero"))
 var secondNumber = parseInt(prompt("Ahora ingresa otro numero"))
 
