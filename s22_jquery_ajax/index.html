@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <form id="pet-form" action="" class="p-3 bg-dark text-white border rounded">
+                    <div class="form-group">
+                        <input name="name" type="text" class="form-control" placeholder="Ingresa el nombre de tu mascota" value="Ikki">
+                    </div>
+                    <div class="form-group">
+                        <input name="specie" type="text" class="form-control" placeholder="De qué especie es tu mascota?" value="Ave">
+                    </div>
+                    <div class=" form-group" class ="form-control" >
+                        <select name="specie" class= "form-control" name="specie">
+                            <option value="Canino">Canino</option>
+                            <option value="Felino">Felino</option>
+                            <option value="Anfibio">Anfibio</option>
+                            <option value="Ave">Ave</option>
+                            <option value="Pez">Pez</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input name="age" type="text" class="form-control" placeholder="Qué edad tiene tu mascota?" value="2 meses">
+                    </div>
+                    <div class="form-group">
+                        <input name="picture" type="text" class="form-control" placeholder="Cómo se ve tu mascota (muestranos una foto :D )?" value="https://tse1.mm.bing.net/th?id=OIP.rn3yMJz55q1rt0vR2vvWXQHaFR&pid=Api">
+                    </div>
+                    <button type="button" id="save-pet" class="btn btn-success">ok</button>
+                </form>
+                <div class="w-100">
+                    <div class="filter-radio-set">
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="perro" name="customRadio" class="custom-control-input" value="perro">  
+                            <label class="custom-control-label" for="perro">Perro</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="gato" name="customRadio" class="custom-control-input" value="gato"> 
+                            <label class="custom-control-label" for="gato">Gato</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="ave" name="customRadio" class="custom-control-input" value="ave"> 
+                            <label class="custom-control-label" for="ave">Ave</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-8">
+                
+                <div class="row pets-wrapper">
+
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
