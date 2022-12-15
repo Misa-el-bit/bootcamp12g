@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 names-wrapper">
+
+            </div>
+            <form class="bg-dark text-white p-3 border rounded">
+                <div class="form-group">
+                    <label for=""></label>
+                    <input type="text" class="form-control" placeholder="Ponle nombre al recuerdo!!!" id="memory-title">
+                </div>
+                <div class="form-group">
+                  <label for="file">Elige la foto de tu recuerdo</label>
+                  <input type="file" class="form-control-file" id="file">
+                </div>
+                <button type="button" class="btn btn-success" id="save-memory">Guardar recuerdo</button>
+              </form>
+              <div class="col-12 col-md-6 ">
+                <div class="row memories-wrapper">
+
+                </div>
+              </div>
+        </div>
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script>  
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyBo2U63pYnv9PQ7CeRYaHqrE5tAW7RQNCY",
+          authDomain: "storage-test-12g-4ffe9.firebaseapp.com",
+          projectId: "storage-test-12g-4ffe9",
+          storageBucket: "storage-test-12g-4ffe9.appspot.com",
+          messagingSenderId: "126228551464",
+          appId: "1:126228551464:web:c5514cf6b223e62faf221d"
+        };
+      
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
